@@ -49,12 +49,12 @@ public class Vector {
     {
         Vector a = new Vector();
         Vector b = new Vector();
-        double A = Vector.getAngle(a, b);
-        double B = a.getModule();
         a.creatVector(0, 0, 1);
         b.creatVector(1, 0, 0);
         Vector c = Vector.add(a, b);
         double d = Vector.dotProduct(a, b);
+        double A = Vector.getAngle(a, b);
+        double B = a.getModule();
         System.out.println(c.x + " " + c.y + " " + c.z + " " + d + " " + A + " " + B + " ");
     }
 }
